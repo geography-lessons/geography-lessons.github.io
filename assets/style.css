@@ -1004,3 +1004,33 @@ a:hover{color:#C7FF76!important}
  background:linear-gradient(var(--g2-atlas),var(--g2-cyan),var(--g2-lime))!important;
  border:3px solid #060A18!important;
 }
+
+
+/* Game page reliability patch: Play / Popular Games */
+.related #relatedGrid{
+  grid-template-columns:repeat(12,minmax(0,1fr));
+  gap:14px;
+}
+.related #relatedGrid .game-card{display:block!important}
+.related-error{
+  grid-column:1/-1;
+  padding:18px 0;
+  opacity:.75;
+}
+#gameFrame{
+  width:100%;
+  height:100%;
+  min-height:520px;
+  border:0;
+}
+@media(max-width:1180px){
+  .related #relatedGrid{grid-template-columns:repeat(8,minmax(0,1fr))}
+}
+@media(max-width:820px){
+  .related #relatedGrid{grid-template-columns:repeat(5,minmax(0,1fr))}
+  #gameFrame{min-height:460px}
+}
+@media(max-width:560px){
+  .related #relatedGrid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  #gameFrame{min-height:390px}
+}
