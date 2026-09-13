@@ -864,3 +864,143 @@ a:hover{color:#B9FFF1!important}
 @media(max-width:760px){
  .hero:before{width:130px;height:130px;right:-35px;top:8%}
 }
+
+/* =========================================================
+   GEOGRAPHY LESSONS UNBLOCKED V2 — NIGHT ATLAS / TOPOGRAPHIC UI
+   ========================================================= */
+:root{
+ --g2-bg:#070A18;
+ --g2-bg2:#0A1230;
+ --g2-panel:#101A3B;
+ --g2-panel2:#15234B;
+ --g2-atlas:#3267FF;
+ --g2-cyan:#38E8FF;
+ --g2-lime:#B8F45A;
+ --g2-coral:#FF766D;
+ --g2-sand:#FFD58A;
+ --g2-ice:#F1F7FF;
+ --g2-muted:#A9B8D6;
+}
+html{background:var(--g2-bg)!important}
+body{
+ color:var(--g2-ice)!important;
+ background:
+  radial-gradient(900px 520px at -5% -6%,rgba(50,103,255,.25),transparent 64%),
+  radial-gradient(760px 500px at 104% 8%,rgba(56,232,255,.12),transparent 66%),
+  radial-gradient(800px 600px at 50% 112%,rgba(255,118,109,.10),transparent 68%),
+  linear-gradient(145deg,#070A18 0%,#0A1230 48%,#07131F 100%)!important;
+}
+body:before{
+ content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+ background-image:
+  radial-gradient(circle at 25% 30%,transparent 0 62px,rgba(56,232,255,.035) 63px 64px,transparent 65px 112px,rgba(56,232,255,.022) 113px 114px,transparent 115px),
+  linear-gradient(rgba(50,103,255,.028) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(50,103,255,.028) 1px,transparent 1px);
+ background-size:430px 430px,64px 64px,64px 64px!important;
+ opacity:.78;
+}
+body:after{
+ content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+ background:
+  linear-gradient(118deg,transparent 0 31%,rgba(184,244,90,.025) 31.1% 31.4%,transparent 31.5%),
+  linear-gradient(28deg,transparent 0 69%,rgba(255,213,138,.024) 69.1% 69.4%,transparent 69.5%);
+}
+header,.navbar,.site-header{
+ background:rgba(7,10,24,.82)!important;
+ border-bottom:1px solid rgba(56,232,255,.14)!important;
+ box-shadow:0 14px 42px rgba(0,0,0,.30)!important;
+ backdrop-filter:blur(20px) saturate(140%)!important;
+}
+.hero{
+ background:
+  linear-gradient(110deg,rgba(50,103,255,.12),transparent 46%),
+  linear-gradient(290deg,rgba(56,232,255,.07),transparent 42%)!important;
+}
+.hero:before{
+ border:1px solid rgba(56,232,255,.28)!important;
+ box-shadow:
+  0 0 0 24px rgba(50,103,255,.045),
+  0 0 0 50px rgba(56,232,255,.025),
+  0 0 80px rgba(56,232,255,.10),
+  inset 0 0 48px rgba(50,103,255,.10)!important;
+}
+.hero h1{color:#fff!important;letter-spacing:-.035em!important}
+.hero h1 span{
+ color:var(--g2-cyan)!important;
+ text-shadow:0 0 32px rgba(56,232,255,.28)!important;
+}
+.kicker{
+ color:#D9FCFF!important;
+ background:linear-gradient(90deg,rgba(50,103,255,.18),rgba(56,232,255,.09))!important;
+ border-color:rgba(56,232,255,.25)!important;
+}
+.primary-btn,.play-btn,.play-button,.btn-primary{
+ color:#050B1D!important;
+ background:linear-gradient(105deg,var(--g2-cyan),#69F2C0 54%,var(--g2-lime))!important;
+ box-shadow:0 14px 38px rgba(56,232,255,.18),0 0 0 1px rgba(255,255,255,.08) inset!important;
+}
+.secondary-btn,.btn-secondary,.toolbar-actions button{
+ background:linear-gradient(180deg,rgba(21,35,75,.96),rgba(12,22,51,.96))!important;
+ border-color:rgba(93,126,255,.24)!important;
+ color:#EAF2FF!important;
+}
+.game-card,.card,.panel,.about,.home-seo,.overview-seo-article,.player-card,.page-hero,.top-editorial-hero{
+ background:
+  linear-gradient(155deg,rgba(21,35,75,.92),rgba(10,19,48,.94))!important;
+ border:1px solid rgba(94,127,255,.15)!important;
+ box-shadow:0 18px 52px rgba(0,0,0,.24)!important;
+}
+.game-card:nth-child(4n+1),.card:nth-child(4n+1){border-top-color:rgba(56,232,255,.48)!important}
+.game-card:nth-child(4n+2),.card:nth-child(4n+2){border-top-color:rgba(184,244,90,.44)!important}
+.game-card:nth-child(4n+3),.card:nth-child(4n+3){border-top-color:rgba(255,118,109,.44)!important}
+.game-card:nth-child(4n),.card:nth-child(4n){border-top-color:rgba(255,213,138,.44)!important}
+.game-card:hover,.card:hover{
+ transform:translateY(-5px)!important;
+ border-color:rgba(56,232,255,.42)!important;
+ box-shadow:0 24px 60px rgba(0,0,0,.32),0 0 32px rgba(50,103,255,.08)!important;
+}
+.search-box,.search-wrap,input[type="search"]{
+ background:#09132D!important;color:#F3FAFF!important;
+ border-color:rgba(56,232,255,.17)!important;
+}
+.search-box:focus-within,.search-wrap:focus-within,input[type="search"]:focus{
+ border-color:var(--g2-cyan)!important;
+ box-shadow:0 0 0 3px rgba(56,232,255,.09),0 0 30px rgba(50,103,255,.08)!important;
+}
+.main-nav a,.main-nav button,.nav a,.navbar a{color:#B6C6E6!important}
+.main-nav a:hover,.main-nav button:hover,.nav a:hover,.navbar a:hover{
+ color:#fff!important;background:rgba(50,103,255,.12)!important
+}
+.nav a.active,.navbar a.active,.main-nav a.active{
+ color:#081025!important;
+ background:linear-gradient(100deg,var(--g2-sand),#FF9D75)!important;
+ border-color:transparent!important;
+}
+.section-title:after,.section-heading:after{
+ background:linear-gradient(90deg,var(--g2-atlas),var(--g2-cyan),var(--g2-lime),var(--g2-sand),var(--g2-coral),transparent)!important;
+ height:3px!important;
+}
+.home-seo h2,.home-seo h3,.overview-seo-article h2,.about h2{color:#F8FBFF!important}
+.home-seo h3,.overview-seo-article h2{border-left:3px solid var(--g2-cyan)!important;padding-left:12px!important}
+.home-seo strong,.overview-seo-article strong,.about strong{color:#C8FF72!important}
+.player-toolbar{
+ background:linear-gradient(90deg,#0B1635,#101D45,#0A1836)!important;
+ border-top:1px solid rgba(56,232,255,.15)!important;
+}
+.toolbar-actions #favoriteButton{color:var(--g2-sand)!important}
+.toolbar-actions #newTabButton{color:var(--g2-cyan)!important}
+.toolbar-actions #fullscreenButton{color:var(--g2-lime)!important}
+.game-meta-row>div,.details-grid aside>div{
+ background:linear-gradient(145deg,rgba(16,30,66,.90),rgba(9,19,45,.90))!important;
+ border-color:rgba(56,232,255,.10)!important;
+}
+footer,.site-footer{
+ background:#050816!important;border-top:1px solid rgba(56,232,255,.12)!important
+}
+a{color:#66EFFF!important}
+a:hover{color:#C7FF76!important}
+::-webkit-scrollbar-track{background:#060A18!important}
+::-webkit-scrollbar-thumb{
+ background:linear-gradient(var(--g2-atlas),var(--g2-cyan),var(--g2-lime))!important;
+ border:3px solid #060A18!important;
+}
